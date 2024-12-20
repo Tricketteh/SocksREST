@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: SocksREST
+  datasource:
+    url: jdbc:postgresql://localhost:5432/socks_db
+    username: user
+    password: pass
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    baseline-on-migrate: true
+    baseline-version: 0
